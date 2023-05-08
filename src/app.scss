@@ -1,9 +1,6 @@
-body {
-	font-family: 'Josefin Sans';
-	background-color: #fffafb;
-}
-
-* {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -13,6 +10,16 @@ body {
 	width: 0;
 }
 
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Josefin Sans';
+	background-color: #fffafb;
+	font-size: 1.6rem;
+}
 .right-arrow,
 .left-arrow {
 	cursor: pointer;

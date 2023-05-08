@@ -10,7 +10,7 @@ import './app.scss'
 
 const App = () => {
 	return (
-		<Box width="400px" sx={{ width: { xl: '1488px' } }} m="auto">
+		<Box width="800px" sx={{ width: { xl: '1300px' } }} m="auto">
 			<Navbar />
 			<Routes>
 				<Route path="/" element={<Home />} />
