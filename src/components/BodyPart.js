@@ -18,8 +18,16 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => {
 				height: '28rem',
 				cursor: 'pointer',
 				gap: '4.5rem',
-			}}>
-			<img src={Icon} alt="dumbbell" styles={{ width: '4rem', height: '4rem' }} />
+			}}
+			onClick={() => {
+				setBodyPart(item)
+				window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
+			}}
+            >
+			<img src={Icon} alt="dumbbell" style={{ width: '4rem', height: '4rem' }} />
+			<Typography fontSize="2.4rem" textTransform="capitalize" color="#3a1212" fontWeight="bold">
+				{item}
+			</Typography>
 		</Stack>
 	)
 }
