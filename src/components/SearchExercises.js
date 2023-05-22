@@ -3,10 +3,9 @@ import { Box, Button, Stack, Typography, TextField } from '@mui/material'
 import { exerciseOptions, fetchData } from '../utils/fetchData'
 import HorizontalScrollbar from './HorizontalScrollbar'
 
-
 const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 	const [search, setSearch] = useState('')
-	
+
 	const [bodyParts, setBodyParts] = useState([])
 
 	useEffect(() => {
@@ -23,13 +22,16 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 		if (search) {
 			const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions)
 
+			console.log(exercisesData)
+
 			const searchedExercises = exercisesData.filter(
-				item =>
-					item.name.toLowerCase().includes(search) ||
-					item.target.toLowerCase().includes(search) ||
-					item.equipment.toLowerCase().includes(search) ||
-					item.bodyPart.toLowerCase().includes(search)
+				exercise =>
+					exercise.name.toLowerCase().includes(search) ||
+					exercise.target.toLowerCase().includes(search) ||
+					exercise.equipment.toLowerCase().includes(search) ||
+					exercise.bodyPart.toLowerCase().includes(search)
 			)
+			console.log(searchedExercises)
 
 			window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
 
@@ -47,7 +49,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 			<Box position="relative" mb="7rem">
 				<TextField
 					sx={{
-						input: { fontWeight: '700', border: 'none', borderRadius: '0.5rem' },
+						input: { fontWeight: '700', fontSize: '1.6rem', border: 'none', borderRadius: '0.5rem' },
 						width: { lg: '80rem', xs: '35rem' },
 						backgroundColor: '#fff',
 						borderRadius: '4rem',
