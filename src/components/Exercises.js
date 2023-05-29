@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Pagination from '@mui/material/Pagination'
 import { Box, Stack, Typography } from '@mui/material'
-
 import { exerciseOptions, fetchData } from '../utils/fetchData'
 import ExerciseCard from './ExerciseCard'
 import Loader from './Loader'
@@ -43,11 +42,11 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 	if (!currentExercises.length) return <Loader />
 
 	return (
-		<Box id="exercises" sx={{ mt: { lg: '110px' } }} mt="50px" p="20px">
-			<Typography variant="h3" fontWeight="bold" sx={{ fontSize: { lg: '44px', xs: '30px' } }} mb="46px">
+		<Box id="exercises" sx={{ mt: { lg: '11rem' } }} mt="5rem" p="2rem">
+			<Typography variant="h3" fontWeight="bold" sx={{ fontSize: { lg: '4.4rem', xs: '3rem' } }} mb="4.6rem">
 				Showing Results
 			</Typography>
-			<Stack direction="row" sx={{ gap: { lg: '110px', xs: '50px' } }} flexWrap="wrap" justifyContent="center">
+			<Stack direction="row" sx={{ gap: { lg: '11rem', xs: '5rem' } }} flexWrap="wrap" justifyContent="center">
 				{currentExercises.map((exercise, idx) => (
 					<ExerciseCard key={idx} exercise={exercise} />
 				))}

@@ -11,29 +11,27 @@ const BodyPart = ({ item, setBodyPart, bodyPart }) => (
 		sx={
 			bodyPart === item
 				? {
-						borderTop: '4px solid #FF2625',
+						borderTop: '0.4rem solid #FF2625',
 						background: '#fff',
-						borderBottomLeftRadius: '20px',
-						width: '270px',
-						height: '282px',
+						width: '27rem',
+						height: '28rem',
 						cursor: 'pointer',
-						gap: '47px',
+						gap: '5rem',
 				  }
 				: {
 						background: '#fff',
-						borderBottomLeftRadius: '20px',
-						width: '270px',
-						height: '282px',
+						width: '27rem',
+						height: '28rem',
 						cursor: 'pointer',
-						gap: '47px',
+						gap: '5rem',
 				  }
 		}
 		onClick={() => {
 			setBodyPart(item)
 			window.scrollTo({ top: 1800, left: 100, behavior: 'smooth' })
 		}}>
-		<img src={Icon} alt="dumbbell" style={{ width: '40px', height: '40px' }} />
-		<Typography fontSize="24px" fontWeight="bold" fontFamily="Alegreya" color="#3A1212" textTransform="capitalize">
+		<img src={Icon} alt="dumbbell" style={{ width: '4rem', height: '4rem' }} />
+		<Typography fontSize="2.4rem" fontWeight="bold" fontFamily="Alegreya" color="#3A1212" textTransform="capitalize">
 			{' '}
 			{item}
 		</Typography>

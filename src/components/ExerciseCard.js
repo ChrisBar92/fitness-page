@@ -8,34 +8,34 @@ const ExerciseCard = ({ exercise }) => (
 		<Stack direction="row">
 			<Button
 				sx={{
-					ml: '21px',
+					ml: '2rem',
 					color: '#fff',
 					background: '#FFA9A9',
-					fontSize: '14px',
-					borderRadius: '20px',
+					fontSize: '1.4rem',
+					borderRadius: '2rem',
 					textTransform: 'capitalize',
 				}}>
 				{exercise.bodyPart}
 			</Button>
 			<Button
 				sx={{
-					ml: '21px',
+					ml: '2rem',
 					color: '#fff',
 					background: '#FCC757',
-					fontSize: '14px',
-					borderRadius: '20px',
+					fontSize: '1.4rem',
+					borderRadius: '2rem',
 					textTransform: 'capitalize',
 				}}>
 				{exercise.target}
 			</Button>
 		</Stack>
 		<Typography
-			ml="21px"
+			ml="2rem"
 			color="#000"
 			fontWeight="bold"
-			sx={{ fontSize: { lg: '24px', xs: '20px' } }}
-			mt="11px"
-			pb="10px"
+			sx={{ fontSize: { lg: '2.4rem', xs: '2rem' } }}
+			mt="1.1rem"
+			pb="1rem"
 			textTransform="capitalize">
 			{exercise.name}
 		</Typography>
