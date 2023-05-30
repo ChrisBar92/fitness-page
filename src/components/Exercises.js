@@ -47,11 +47,11 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
 				Showing Results
 			</Typography>
 			<Stack direction="row" sx={{ gap: { lg: '11rem', xs: '5rem' } }} flexWrap="wrap" justifyContent="center">
-				{currentExercises.map((exercise, idx) => (
-					<ExerciseCard key={idx} exercise={exercise} />
+				{currentExercises.map((exercise, index) => (
+					<ExerciseCard key={index} exercise={exercise} />
 				))}
 			</Stack>
-			<Stack sx={{ mt: { lg: '100px', xs: '70px' } }} alignItems="center">
+			<Stack sx={{ mt: { lg: '10rem', xs: '7rem' } }} alignItems="center">
 				{exercises.length > 9 && (
 					<Pagination
 						color="standard"

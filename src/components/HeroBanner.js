@@ -13,7 +13,7 @@ const HeroBanner = () => {
 			}}
 			position="relative"
 			p="2rem">
-			<Typography color="#ff2625" fontWeight="600" fontSize="2.6rem">
+			<Typography color="#ff2625" fontWeight="600" fontSize="3.6rem">
 				SweatGym - Fitness Club
 			</Typography>
 			<Typography fontWeight={700} sx={{ fontSize: { lg: '4.4rem', xs: '3.6rem' } }} mb="2.5rem" mt="3rem">
