@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/fitness-page/static/css/main.f81c5910.css",
-    "main.js": "/fitness-page/static/js/main.be7e5060.js",
+    "main.js": "/fitness-page/static/js/main.1bd08c3f.js",
     "static/media/fitness-banner.jpg": "/fitness-page/static/media/fitness-banner.d1c36214e382766b8126.jpg",
     "static/media/Logo.png": "/fitness-page/static/media/Logo.963e515db2de5dc9f797.png",
     "static/media/gym.png": "/fitness-page/static/media/gym.6e701417c428e2fbc267.png",
     "index.html": "/fitness-page/index.html",
     "main.f81c5910.css.map": "/fitness-page/static/css/main.f81c5910.css.map",
-    "main.be7e5060.js.map": "/fitness-page/static/js/main.be7e5060.js.map"
+    "main.1bd08c3f.js.map": "/fitness-page/static/js/main.1bd08c3f.js.map"
   },
   "entrypoints": [
     "static/css/main.f81c5910.css",
-    "static/js/main.be7e5060.js"
+    "static/js/main.1bd08c3f.js"
   ]
 }
